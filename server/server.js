@@ -1,31 +1,12 @@
 const fs = require('fs');
 const express = require('express');
 const { ApolloServer, UserInputError } = require('apollo-server-express');
-const { GraphQLScalarType } = require('graphql');
 const { Kind } = require('graphql/language');
 
 let aboutMessage = "Product Tracker API v1.0";
 
 const productsDB = [
 ];
-
-const GraphQLCategory = new GraphQLScalarType({
-  name: 'GraphQLCategory',
-  description: 'A GraphQLCategory() type in GraphQL as a scalar',
-  serialize(value) {
-    return value.toISOString();
-  },
-  parseValue(value) {
-    const categoryValue = new String(value);
-    return isNaN(categoryValue) ? undefined : categoryValue;
-  },
-  parseLiteral(ast) {
-    if (ast.kind == Kind.STRING) {
-      const value = new String(ast.value);
-      return isNaN(value) ? undefined : value;
-    }
-  },
-});
 
 const resolvers = {
   Query: {
@@ -36,7 +17,6 @@ const resolvers = {
     setAboutMessage,
     productAdd,
   },
-  GraphQLCategory,
 };
 
 function setAboutMessage(_, { message }) {

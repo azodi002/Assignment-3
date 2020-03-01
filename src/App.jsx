@@ -141,7 +141,7 @@ class ProductAdd extends React.Component {
 		form.price.value = "";
 		form.product_name.value = "";
 		form.image_path.value = "";
-		form.category.value = "Shirts";
+		form.category.value = 'Shirts';
 	}
 
 	render() {
@@ -152,11 +152,11 @@ class ProductAdd extends React.Component {
 					<span class="price_label">Price Per Unit</span>
 				</div>
 				<select id="category">
-				  <option value="shirts">Shirts</option>
-				  <option value="jeans">Jeans</option>
-				  <option value="jackets">Jackets</option>
-				  <option value="sweaters">Sweaters</option>
-				  <option value="accessories">Accessories</option>
+				  <option value="Shirts">Shirts</option>
+				  <option value="Jeans">Jeans</option>
+				  <option value="Jackets">Jackets</option>
+				  <option value="Sweaters">Sweaters</option>
+				  <option value="Accessories">Accessories</option>
 				</select>
 
 

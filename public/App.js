@@ -293,7 +293,7 @@ function (_React$Component4) {
       form.price.value = "";
       form.product_name.value = "";
       form.image_path.value = "";
-      form.category.value = "Shirts";
+      form.category.value = 'Shirts';
     }
   }, {
     key: "render",
@@ -308,15 +308,15 @@ function (_React$Component4) {
       }, "Price Per Unit")), React.createElement("select", {
         id: "category"
       }, React.createElement("option", {
-        value: "shirts"
+        value: "Shirts"
       }, "Shirts"), React.createElement("option", {
-        value: "jeans"
+        value: "Jeans"
       }, "Jeans"), React.createElement("option", {
-        value: "jackets"
+        value: "Jackets"
       }, "Jackets"), React.createElement("option", {
-        value: "sweaters"
+        value: "Sweaters"
       }, "Sweaters"), React.createElement("option", {
-        value: "accessories"
+        value: "Accessories"
       }, "Accessories")), React.createElement("span", {
         class: "currencyinput"
       }, "$", React.createElement("input", {
