@@ -2,7 +2,7 @@ scalar GraphQLCategory
 
 type Product {
   id: Int!
-  category: String!
+  category: GraphQLCategory!
   product_name: String!
   price: Float
   image_path: String
@@ -10,7 +10,7 @@ type Product {
 
 "Toned down Issue, used as inputs, without server generated values."
 input ProductInputs {
-  category: String
+  category: GraphQLCategory
   product_name: String
   price: Float
   image_path: String
