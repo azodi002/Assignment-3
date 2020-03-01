@@ -1,0 +1,39 @@
+.category_label
+{
+	margin-right:80px;
+}
+
+.product_label
+{
+	margin-right: 50px;
+}
+
+#product_text
+{
+	margin-right: 32px;
+}
+
+#category
+{
+	margin-right: 32px;
+	width:110px;
+}
+
+#add_product_button
+{
+	width:100px;
+	height:25px;
+}
+
+body
+{
+	background-color: #FFE4C4;
+}
+
+.currencyinput {
+    border: 1px;
+    background-color: #FFFFFF;
+}
+.currencyinput input {
+    border: 0;
+}

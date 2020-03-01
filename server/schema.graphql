@@ -1,0 +1,29 @@
+scalar GraphQLCategory
+
+type Product {
+  id: Int!
+  category: String!
+  product_name: String!
+  price: Float
+  image_path: String
+}
+
+"Toned down Issue, used as inputs, without server generated values."
+input ProductInputs {
+  category: String
+  product_name: String
+  price: Float
+  image_path: String
+}
+
+##### Top level declarations
+
+type Query {
+  about: String!
+  productList: [Product!]!
+}
+
+type Mutation {
+  setAboutMessage(message: String!): String
+  productAdd(product: ProductInputs!): Product!
+}
